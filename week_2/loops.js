@@ -60,7 +60,7 @@ while(num != 0){
 
     }
     
-    let avrage= total/count;
+    let avrage= sum/count;
     console.log("average is "+avrage);
     
 
@@ -68,16 +68,16 @@ while(num != 0){
 
 
 // Make a program that asks 25 numbers form the user. In the end program prints out average of the numbers.
-let total = 0;
-let equalDivide;
-for(i=0; i<5; i++){
-    let input = Number(prompt("enter numbers"));
-    let counter = input++;
-    total += input;
-   equalDivide = total/counter;
+let sum1 = 0;
+for(let i=0; i<25; i++){
+ let input1  = Number(prompt("enter 25 numbers"));
+    sum1 += input1;
+  
+  
     
 }
-console.log(equalDivide);
+let average2= sum1/25;
+console.log('Average is '+average2);
 
 
 // Make a program that ask first one number from the user. After that the program asks: ”Do you want to continue giving numbers?(y/n)”. If user answers y, the program continues to ask another number. If user answers n, program ends. In the end program prints out average of the numbers.
@@ -100,4 +100,10 @@ if(question == true){
 
 
 // Make a program that asks first how many numbers user wants to give to the program. After that program asks those numbers. In the end program prints out the smallest number that user gave.
-
+let minimumNumber;
+let userWish = Number(prompt("How many numbers do you like to input?"));
+for(let i=0; i<userWish; i++){
+    let inputNumber = Number(prompt("Enter your numbers"));
+     minimumNumber = Math.min(inputNumber);
+}
+console.log('Minimum number is ' + minimumNumber);
