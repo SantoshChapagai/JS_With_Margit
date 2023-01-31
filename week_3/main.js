@@ -16,3 +16,18 @@ const calcGasoline = () =>{
 };
 
 
+const tempConverter=(id)=>{
+const celInput = document.querySelector('#celcius');
+const fahInput = document.querySelector('#fahrenheit');
+const kelInput = document.querySelector('#kelvin');
+
+
+
+
+fahInput.value = (celInput.value)*1.8+32;
+kelInput.value = +(celInput.value)+273.15;
+
+
+
+
+}

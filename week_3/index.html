@@ -27,6 +27,21 @@
     <p id="answer"></p>
 
 
+    <h2>Temperature Converter</h2>
+    <form>
+    <div class="form_group">
+        <label for="celcius">Celcius</label>
+        <input type="number" id="celcius" onchange="tempConverter(this.id)">
+    </div>
+    <div class="form_group">
+        <label for="fahrenheit">Fahrenheit</label>
+        <input type="number" id="fahrenheit" onchange="tempConverter(this.id)">
+    </div>
+    <div class="form_group">
+        <label for="kelvin">Kelvin</label>
+        <input type="number" id="kelvin" onchange="tempConverter(this.id)">
+    </div>
+    </form>
 
   <script src="main.js"></script>  
 </body>
