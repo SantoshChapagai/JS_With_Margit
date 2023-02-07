@@ -1,3 +1,5 @@
+// salary calculator
+
 function salaryCal(){
 
 
