@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+body{
+    background-color: navajowhite;
+    margin: 0 10px;
+}
+
+header{
+   font-family: 'Gill Sans', sans-serif;
+    background-color: brown;
+    padding: 20px;
+}
+h1, h2{
+    color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.pizza_lover{
+    padding: 150px;
+    background: url("https://media.istockphoto.com/id/938742222/fi/valokuva/cheesy-pepperoni-pizza.jpg?s=612x612&w=0&k=20&c=59OU7SxScmUyckWn-LQpjWqS-YmbY9vJZjF-I-sjhy4=") no-repeat center center/cover;
+    margin-bottom: 1.5rem;
+}
+.personal_information{
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+.personal_information input{
+    margin-left: 1.2rem;
+    border: 1px solid grey;
+    width: 25vw;
+    height: 4vw;
+    font-family: 'Manrope', sans-serif;
+}
+.order{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+.order p{
+    margin: 2px;
+    padding: 10px;
+    font-size: 20px;
+}
+.order label{
+    margin: 2px;
+    padding:5px
+}
+
+#size, #toppings, #delivery{
+    margin: 10px;
+    border: 3px solid orange;
+}
+
+h5{
+    display: flex;
+    justify-content: center;
+}
+footer{
+    margin: 20px 5px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: burlywood;
+    color: white;
+}
+
