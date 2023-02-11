@@ -69,30 +69,31 @@ while(num != 0){
 
 // Make a program that asks 25 numbers form the user. In the end program prints out average of the numbers.
 let sum1 = 0;
-for(let i=0; i<25; i++){
- let input1  = Number(prompt("enter 25 numbers"));
+let count1 = 0;
+do{
+ let input1  = Number(prompt("enter a number"));
     sum1 += input1;
-  
-  
-    
-}
-let average2= sum1/25;
+    count1++; 
+} while(count1 !==25);
+let average2= sum1/count1;
 console.log('Average is '+average2);
 
 
 // Make a program that ask first one number from the user. After that the program asks: ”Do you want to continue giving numbers?(y/n)”. If user answers y, the program continues to ask another number. If user answers n, program ends. In the end program prints out average of the numbers.
-let firstNumber = Number(prompt("Enter any number"));
-let question = confirm("Do you want to continue entering number?");
-if(question == true){
-  while(i>0)  {
-   let newNumber = prompt("Enter number");
-   console.log(min(newNumber));
-    
-  }
-  
-}else{
-    console.log(firstNumber);
+
+let inputNew, confirmation;
+let total = 0;
+let counter = 0;
+
+while (confirmation != 'n'){
+    inputNew = Number(prompt("Enter any number"));
+confirmation = confirm("Do you want to continue entering number?(y/n)");
+total = total + inputNew;
+counter++;
 }
+let newAverage = total/counter;
+console.log('Average is '+ newAverage);
+
 
 
 
@@ -100,10 +101,14 @@ if(question == true){
 
 
 // Make a program that asks first how many numbers user wants to give to the program. After that program asks those numbers. In the end program prints out the smallest number that user gave.
-let minimumNumber;
+let minimumNumber = 0;
 let userWish = Number(prompt("How many numbers do you like to input?"));
 for(let i=0; i<userWish; i++){
     let inputNumber = Number(prompt("Enter your numbers"));
-     minimumNumber = Math.min(inputNumber);
+    if(inputNumber >=0 && minimumNumber == 0){
+    minimumNumber = inputNumber;
+    }else if (inputNumber < minimumNumber ){
+        minimumNumber = inputNumber;
+    }
 }
 console.log('Minimum number is ' + minimumNumber);
