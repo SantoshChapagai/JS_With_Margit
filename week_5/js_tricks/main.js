@@ -48,6 +48,7 @@ const modalShow = () =>{
 
 
 }
+// event listeners
 
 backButton.addEventListener('click', getToTop)
 mobButton.addEventListener('click', mobMenu)

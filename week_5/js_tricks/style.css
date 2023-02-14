@@ -96,11 +96,12 @@ footer{
 }
 .overlay.visible{
     display:flex;
+    opacity: 0.9;
 }
 .modal{
     background-color: white;
     color:#333;
-    height: 50vh;
+    min-height: 50vh;
     width: 75vw;
     border-radius: 5px;
     padding: 2rem;

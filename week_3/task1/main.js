@@ -15,6 +15,7 @@ const calcGasoline = () =>{
     answer.textContent= text;
 };
 
+// convert temperature
 
 const tempConverter=(id, value)=>{
 
