@@ -5,11 +5,32 @@
 }
 body{
    background-color: bisque;
-   font-family:font-family: 'Righteous', cursive; ;
+   font-family: 'Righteous', cursive; 
+   text-align: center;
+   height:100vh;
+   width:100vw;
+}
+h1{
+margin: 5rem 0;
+}
+#score{
+    margin: 2rem;
 }
 
+.dot{
+    height:15vh;
+    width: 15vw;
+    
+}
 
-
+#start, #end{
+    margin: 3rem;
+    height: 5vh;
+    width: 10vw;
+    border: none;
+    border-radius: 5px;
+}
 #end{
-    display:none;
+    display: none;
 }
+
