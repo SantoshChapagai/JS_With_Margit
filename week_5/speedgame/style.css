@@ -1,36 +1,86 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-   background-color: bisque;
-   font-family: 'Righteous', cursive; 
-   text-align: center;
-   height:100vh;
-   width:100vw;
+
+body {
+    background-color: bisque;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
 }
-h1{
-margin: 5rem 0;
+
+h1 {
+    margin: 5rem 0;
 }
-#score{
+
+#score {
     margin: 2rem;
 }
 
-.dot{
-    height:15vh;
-    width: 15vw;
-    
+.points {
+    display: inline-block;
 }
 
-#start, #end{
+#circle {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.box {
+    height: 150px;
+    width: 150px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 0.4rem;
+    padding: 4rem;
+    cursor: pointer;
+}
+
+.box:hover {
+    border: 2px solid white;
+}
+
+#aqua {
+    background-color: aqua;
+}
+
+#aquamarine {
+    background-color: aquamarine;
+}
+
+#cyan {
+    background-color: cyan;
+}
+
+#skyblue {
+    background-color: skyblue;
+}
+
+
+.active {
+    background-color: white;
+}
+
+#start_button,
+#end {
     margin: 3rem;
     height: 5vh;
     width: 10vw;
     border: none;
     border-radius: 5px;
 }
-#end{
-    display: none;
+
+#start_button:hover {
+    background-color: aquamarine;
 }
 
+#end {
+    display: none;
+}
