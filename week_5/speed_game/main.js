@@ -20,6 +20,7 @@ const clickCircle = (i) => {
   if (i !== active) {
     return endGame()
   }
+  rounds -= 1
   score += 10
   scoreSpan.textContent = score
 }
@@ -30,7 +31,7 @@ const enableCircles = () => {
 }
 const startGame = () => {
   startSound.play()
-  if (rounds >= 10) {
+  if (rounds >= 3) {
     return endGame()
   }
   startButton.classList.add('hidden')
