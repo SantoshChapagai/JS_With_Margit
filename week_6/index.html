@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Car finder</title>
+</head>
+
+<body>
+  <main>
+    <section id="car_details">
+      <form>
+        <div>
+          <h2>Please enter the car details</h2>
+        </div>
+        <div>
+          <label for="licence">Licence plate</label>
+          <input id="licence" type="text">
+        </div>
+        <div>
+          <label for="maker">Car maker</label>
+          <input id="maker" type="text">
+        </div>
+        <div>
+          <label for="model">Car model</label>
+          <input id="model" type="text">
+        </div>
+        <div>
+          <label for="owner">Car owner</label>
+          <input id="owner" type="text">
+        </div>
+        <div>
+          <label for="price">Car price</label>
+          <input id="price" type="number">
+        </div>
+        <div>
+          <label for="colour">Car colour</label>
+          <input id="colour" type="text">
+        </div>
+        <div>
+          <button id="btn_submit" type="submit">Add</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+      <div>
+        <table id="table">
+          <tr>
+            <th>Licence</th>
+            <th>Maker</th>
+            <th>Model</th>
+            <th>Owner</th>
+            <th>Price</th>
+            <th>Colour</th>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section class="search">
+      <div class="heading">
+        <h4>please search your licence number</h4>
+      </div>
+      <div>
+        <input id="search" type="text">
+        <button id="btn_search">Search</button>
+      </div>
+      <div>
+        <p id="answer"></p>
+      </div>
+
+    </section>
+  </main>
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>
