@@ -39,12 +39,44 @@ h2 {
   background-color: blanchedalmond;
   padding: 0.5rem;
   text-align: center;
+  font-size: medium;
+}
+
+h3 {
+  text-align: center;
+}
+
+button {
+  height: 2rem;
+  width: 3rem;
+  margin: 0.2rem;
+  background-color: rgb(216, 153, 72);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+input,
+button {
+  border-radius: 5px;
+}
+
+.search button {
+  width: 5rem;
 }
 
 li {
   display: grid;
   background-color: white;
-  margin: 1rem;
+  margin: 0.5rem;
   padding: 0.25rem;
   background-color: darkkhaki;
   border: none;
